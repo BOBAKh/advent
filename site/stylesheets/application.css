@@ -1,0 +1,10 @@
+body { background: #000 url(../images/layout/body.jpg) top left repeat-x; color: #fff; font:14px Georgia, serif;}
+
+#site { width: 960px; margin: 0 auto; }
+ul.calendar {margin: 0; padding: 0; list-style-type:none; position:relative; }
+ul.calendar li { position:relative; display: block; margin:0; padding 0; float:left; width:318px; height:240px; overflow:hidden; border:1px solid #ddd }
+ul.calendar li a { display: block; position:absolute; left:0; top:0; width:320px; height:240px; line-height:240px; text-align:center; color: #fff; font:200px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif; text-decoration:none; background:#111;text-shadow: 1px 1px 5px #fff; }
+ul.calendar li a span { height:240px; line-height:240px; text-align:center; }
+ul.calendar li p { font:22px Georgia, serif; color:#fff;margin: 30px; }
+ul.calendar li a { display:none; }
+
