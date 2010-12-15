@@ -1,10 +1,10 @@
 !!!
 %html
   %head
-    %title Amanda's Advent Email
+    %title= "Amanda's Advent(ure): December #{today}, 2010"
     %meta{'http-equiv' => 'imagetoolbar', 'content' => 'no'}
     %meta{'http-equiv' => 'X-UA-Compatible', 'content' => 'IE=EmulateIE7'}
-  %body{:style => "background:#e6e6e6 url(/images/bg.jpg) top center repeat-y;"}
+  %body{:style => "background:#fff url(http://suderman.me/advent/images/bg.gif) top center repeat-y;"}
     %table{:width => "100%", :cellspacing => "10", :cellpadding => "0"}
       %tr
         %td{:align => "center", :valign => "top"}
@@ -12,8 +12,7 @@
             %tr{:align => "left", :valign => "top"}
               %td{:width => "650", :valign => "top", :align => "left"}
                 = yield
-          %img{:src => '/images/hr-red.gif', :width => "650", :height => "27"}
+          %img{:src => 'http://suderman.me/advent/images/footer.gif', :width => "650", :height => "58"}
       %tr
-        %td{:align => "center"}
-          %p &copy; Copyright 2010 Suderman Industries
-          %p Calgary, Alberta
+        %td{:align => "center", :style => "padding:10px;"}
+          %a{:style => "text-decoration:none;color:#737373;font-size:12px;font-family:'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif;", :href => "http://suderman.me/advent#{current_page}"} Click <u>here</u> to view this email online

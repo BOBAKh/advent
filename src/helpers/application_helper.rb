@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def today
-    20
+    current_page[1..-1].to_i
   end
 
   def day(date, content)
@@ -13,7 +13,7 @@ module ApplicationHelper
 
   def date(date)
     formatted_date = "%02d" % date
-    formatted_date = '/images/' + formatted_date
+    formatted_date = 'http://suderman.me/advent/images/' + formatted_date
     return formatted_date + '.gif' if date < today
     return formatted_date + '-active.gif' if date == today
     return formatted_date + '-coming.gif' if date > today
@@ -22,11 +22,11 @@ module ApplicationHelper
   def mark(date)
     mark = 'b.gif'
     mark = 'm.jpg' if date == today
-    return '/images/' + mark
+    return 'http://suderman.me/advent/images/' + mark
   end
 
   def content(date, content)
-    content = '<img src="/images/blur.jpg">' if date > today
+    content = '<img src="http://suderman.me/advent/images/blur.jpg">' if date > today
     return content
   end
 
